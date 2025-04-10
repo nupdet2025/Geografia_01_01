@@ -22,7 +22,7 @@ gdjs.FinalCode.GDAcertoObjects1= [];
 gdjs.FinalCode.GDAcertoObjects2= [];
 
 
-gdjs.FinalCode.asyncCallback12207860 = function (runtimeScene, asyncObjectsList) {
+gdjs.FinalCode.asyncCallback10653876 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.FinalCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Introdução", false);
 }gdjs.FinalCode.localVariables.length = 0;
@@ -36,7 +36,7 @@ gdjs.FinalCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.FinalCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.FinalCode.asyncCallback12207860(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.FinalCode.asyncCallback10653876(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -101,7 +101,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets\\victory.mp3", 2, false, 60, 1);
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets\\victory.mp3", 2, true, 60, 1);
 }}
 
 }
